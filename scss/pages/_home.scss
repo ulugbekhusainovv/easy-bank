@@ -41,7 +41,7 @@
   .hero__mobile-image {
     display: none !important;
     position: absolute;
-    top: -90px;
+    top: -60px;
     width: 90%;
   }
 
@@ -58,7 +58,7 @@
 
   @include responsive(tablet) {
     padding-top: 28rem;
-    background-position: top -400px left -200px;
+    background-position: top -450px left -200px;
 
     .container {
       display: flex;

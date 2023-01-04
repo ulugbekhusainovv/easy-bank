@@ -595,7 +595,7 @@ h6 {
 .hero .hero__mobile-image {
   display: none !important;
   position: absolute;
-  top: -90px;
+  top: -60px;
   width: 90%;
 }
 @media screen and (max-width: 1020px) {
@@ -612,7 +612,7 @@ h6 {
 @media screen and (max-width: 840px) {
   .hero {
     padding-top: 28rem;
-    background-position: top -400px left -200px;
+    background-position: top -450px left -200px;
   }
   .hero .container {
     display: flex;
