@@ -62,6 +62,8 @@
     .container {
       display: flex;
       flex-direction: column-reverse !important;
+      text-align: center;
+      align-items: center;
     }
     .hero__desktop-img {
       display: none;
@@ -72,7 +74,7 @@
     }
 
     .hero__info {
-      margin-top: 4rem;
+      margin-top: 16rem;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -126,6 +128,14 @@
     }
   }
 
+  @include responsive(desktop) {
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
   @include responsive(tablet) {
     padding: 6.4rem 0;
     .container {
@@ -148,7 +158,9 @@
     }
     .features__list {
       display: flex;
-      flex-direction: column;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      row-gap: 4rem;
     }
     &__item {
       display: flex;

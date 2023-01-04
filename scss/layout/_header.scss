@@ -1,6 +1,5 @@
 // HEADER START
 .header {
-    
     position: relative;
     background-color: $white-color;
     .container {
@@ -23,7 +22,12 @@
         justify-content: space-between;
         
     }
-
+    @include responsive(fracture) {
+        .container {
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+    }
 
     @include responsive (tablet) {
         padding-top: 2.5rem;

@@ -10,7 +10,11 @@
 
 @mixin responsive($size) {
   @if $size == desktop {
-    @media screen and (max-width: 1160px) {
+    @media screen and (max-width: 1020px) {
+      @content;
+    }
+  } @else if $size == fracture {
+    @media screen and (max-width: 995px) {
       @content;
     }
   } @else if $size == tablet {
