@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 2px dotted $primary-color;
+  outline-offset: 4px;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $body-bg;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  // position: relative;
+  @include responsive(tablet) {
+    padding: 0 2.4rem;
+  }
+}
