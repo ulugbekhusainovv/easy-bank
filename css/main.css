@@ -611,7 +611,7 @@ h6 {
 }
 @media screen and (max-width: 840px) {
   .hero {
-    padding-top: 38.6rem;
+    padding-top: 28rem;
     background-position: top -400px left -200px;
   }
   .hero .container {
@@ -655,6 +655,11 @@ h6 {
     letter-spacing: -0.23px;
     color: #9597a5;
     font-weight: 400;
+  }
+}
+@media screen and (max-width: 476px) {
+  .hero .hero__info {
+    margin-top: 0;
   }
 }
 

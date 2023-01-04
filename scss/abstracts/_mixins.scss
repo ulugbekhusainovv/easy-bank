@@ -21,5 +21,9 @@
     @media screen and (max-width: 840px) {
       @content;
     }
+  } @else if $size == mobile {
+    @media screen and (max-width: 476px) {
+      @content;
+    }
   }
 }

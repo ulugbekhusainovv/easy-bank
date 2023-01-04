@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: right top;
   position: relative;
+  
 
   .container {
     display: flex;
@@ -56,7 +57,7 @@
   }
 
   @include responsive(tablet) {
-    padding-top: 38.6rem;
+    padding-top: 28rem;
     background-position: top -400px left -200px;
 
     .container {
@@ -94,6 +95,12 @@
       display: flex;
       align-items: center;
       @include fontStyle(1.5rem, 1.6666, -0.23px, $main-text-color, 400);
+    }
+  }
+
+  @include responsive(mobile) {
+    .hero__info {
+      margin-top: 0;
     }
   }
 }
